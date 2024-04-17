@@ -1,0 +1,33 @@
+meta {
+  name: Main Fetch
+  type: graphql
+  seq: 1
+}
+
+post {
+  url: https://onepace.net/api/graphql
+  body: graphql
+  auth: none
+}
+
+body:graphql {
+  query GetEpisodes {
+      episodes {
+        anime_episodes
+        arc {
+          invariant_title
+        }
+        downloads {
+          type
+          uri
+        }
+        duration
+        id
+        invariant_title
+        part
+        released_at
+        resolution
+      }
+    }
+  
+}

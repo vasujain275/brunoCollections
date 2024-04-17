@@ -1,0 +1,15 @@
+meta {
+  name: Get Current User
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{base}}/users/user-info
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWZjNmNkOGZjM2Q5MDAzYTJkYzRmZjIiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJ1c2VybmFtZSI6InRlc3QxIiwiZnVsbE5hbWUiOiJUZXN0IDEiLCJpYXQiOjE3MTExOTgwMTMsImV4cCI6MTcxMTI4NDQxM30.jDi_RlaAqxQ782mfOxbX4PuCHqki-oTd_BZGATE4gYw
+}

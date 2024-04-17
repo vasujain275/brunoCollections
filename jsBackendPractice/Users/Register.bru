@@ -1,0 +1,28 @@
+meta {
+  name: Register
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base}}/users/register
+  body: multipartForm
+  auth: none
+}
+
+body:form-urlencoded {
+  fullname: Test 1
+  email: test1@test.com
+  password: 1234
+  username: test1
+  avatar: 
+}
+
+body:multipart-form {
+  fullName: Test 1
+  username: test1
+  email: test@test.com
+  password: 1234
+  avatar: @file(/home/vasu/Downloads/randomDownloads/avatar-test.png)
+  coverImage: @file(/home/vasu/Downloads/randomDownloads/coverImage-test.png)
+}
