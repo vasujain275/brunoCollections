@@ -1,0 +1,18 @@
+meta {
+  name: Create Books
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base}}/books
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"The Cpp Book",
+    "publishedYear":2005
+  }
+}
