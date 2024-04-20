@@ -1,0 +1,18 @@
+meta {
+  name: Create Author
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base}}/authors
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"Ruskin Bond",
+    "email":"ruskin@bond.io"
+  }
+}
