@@ -1,0 +1,19 @@
+meta {
+  name: Create New Admin
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base}}/admins
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"test1",
+    "email":"test1@test.com",
+    "password":"test@1"
+  }
+}
